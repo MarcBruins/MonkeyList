@@ -1,10 +1,10 @@
 ﻿using MvvmCross.Core.ViewModels;
 
-namespace MonkeyList.Core
+namespace MonkeyList.Core.ViewModels
 {
     public class MonkeysViewModel : MvxViewModel
     {
-        public MvxObservableCollection<Monkey> Monkeys = new MvxObservableCollection<Monkey>();
+        public MvxObservableCollection<Monkey> Monkeys { get; set;} = new MvxObservableCollection<Monkey>();
 
         public MonkeysViewModel()
         {
@@ -23,7 +23,7 @@ namespace MonkeyList.Core
                 Details = "The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus.",
                 Image = "http://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Capuchin_Costa_Rica.jpg/200px-Capuchin_Costa_Rica.jpg"
             });
-
+       
             Monkeys.Add(new Monkey
             {
                 Name = "Blue Monkey",

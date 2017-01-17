@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+<!--Syles-->
+    <color name="colorPrimary">#e6233e</color>
+    <color name="colorPrimaryDark">#A70626</color>
+    <color name="colorAccent">#e6233e</color>
+
+    <!-- White to Black -->
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#EFF2F5</color>
+    <color name="med_gray">#C7D2DC</color>
+    <color name="gray">#5C7082</color>
+    <color name="dark_gray">#FF2B343D</color>
+    <color name="black">#0D131A</color>
+    <color name="text_gray">#5A6570</color>
+
+    <!--Specific Color-->
+    <color name="red">#ea2040</color>
+    <color name="black">#000000</color>
+    <color name="border">#D7D7D7</color>
+  <color name="gray_button">#eeeeee</color>
+  <color name="gray_fab">#757575</color>
+    <color name="green_button">#4caf50</color>
+  <color name="inventory_gray">#8a010101</color>
+    
+    <!--Text Color-->
+    <color name="header_text_color">#000000</color>
+    <color name="main_text_color">#dd010101</color>
+    <color name="sub_text_color">#89010101</color>
+    <color name="light_text_color">#dd000000</color> 
+    <color name="placeholder_text_color">#80000000</color>
+</resources>

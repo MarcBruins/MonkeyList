@@ -11,7 +11,7 @@ namespace MonkeyList.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<ViewModels.MonkeysViewModel>();
         }
     }
 }

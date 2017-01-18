@@ -3,7 +3,6 @@ using MvvmCross.Droid.Platform;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.Platform;
 using MvvmCross.Droid.Views;
-using MvvmCross.Droid.Support.V7.AppCompat;
 using MvvmCross.Droid.Shared.Presenter;
 using System.Collections.Generic;
 using System.Reflection;
@@ -35,19 +34,16 @@ namespace MonkeyList.Droid
             return mvxFragmentsPresenter;
         }
 
-        protected override IEnumerable<Assembly> AndroidViewAssemblies => new List<Assembly>(base.AndroidViewAssemblies)
-        {
-            typeof(Android.Support.Design.Widget.NavigationView).Assembly,
-            typeof(Android.Support.Design.Widget.FloatingActionButton).Assembly,
-            typeof(Android.Support.V7.Widget.Toolbar).Assembly,
-            typeof(Android.Support.V4.Widget.DrawerLayout).Assembly,
-            typeof(Android.Support.V4.View.ViewPager).Assembly,
-            typeof(MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView).Assembly
-        };
-        protected override void FillTargetFactories(IMvxTargetBindingFactoryRegistry registry)
-        {
-            MvxAppCompatSetupHelper.FillTargetFactories(registry);
-            base.FillTargetFactories(registry);
-        }
+        //protected override IEnumerable<Assembly> AndroidViewAssemblies => new List<Assembly>(base.AndroidViewAssemblies)
+        //{
+        //    typeof(Android.Support.V4.Widget.DrawerLayout).Assembly,
+        //    typeof(Android.Support.V4.View.ViewPager).Assembly,
+        //    typeof(MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView).Assembly
+        //};
+        //protected override void FillTargetFactories(IMvxTargetBindingFactoryRegistry registry)
+        //{
+        //    MvxApp.FillTargetFactories(registry);
+        //    base.FillTargetFactories(registry);
+        //}
     }
 }

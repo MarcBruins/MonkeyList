@@ -4,7 +4,7 @@ namespace MonkeyList.Core.ViewModels
 {
     public class MonkeysViewModel : MvxViewModel
     {
-        public MvxObservableCollection<Monkey> Monkeys { get; set;} = new MvxObservableCollection<Monkey>();
+        public MvxObservableCollection<Monkey> Monkeys { get; set; } = new MvxObservableCollection<Monkey>();
 
         public MonkeysViewModel()
         {
@@ -81,7 +81,5 @@ namespace MonkeyList.Core.ViewModels
                 Image = "http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Proboscis_Monkey_in_Borneo.jpg/250px-Proboscis_Monkey_in_Borneo.jpg"
             });
         }
-
-
     }
 }

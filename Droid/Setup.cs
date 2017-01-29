@@ -34,16 +34,9 @@ namespace MonkeyList.Droid
             return mvxFragmentsPresenter;
         }
 
-        //protected override IEnumerable<Assembly> AndroidViewAssemblies => new List<Assembly>(base.AndroidViewAssemblies)
-        //{
-        //    typeof(Android.Support.V4.Widget.DrawerLayout).Assembly,
-        //    typeof(Android.Support.V4.View.ViewPager).Assembly,
-        //    typeof(MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView).Assembly
-        //};
-        //protected override void FillTargetFactories(IMvxTargetBindingFactoryRegistry registry)
-        //{
-        //    MvxApp.FillTargetFactories(registry);
-        //    base.FillTargetFactories(registry);
-        //}
+        protected override IEnumerable<Assembly> AndroidViewAssemblies => new List<Assembly>(base.AndroidViewAssemblies)
+        {
+            typeof(MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView).Assembly
+        };
     }
 }

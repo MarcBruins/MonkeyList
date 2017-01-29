@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="cxk-wN-pdQ" customClass="MonkeyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3dC-Q1-qIr">
+                        <rect key="frame" x="8" y="19" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="2k6-vX-FIp"/>
+                            <constraint firstAttribute="width" constant="90" id="dMY-gx-ELo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baboon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2r-xU-R6I">
+                        <rect key="frame" x="106" y="19" width="52.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryr-A6-eY0">
+                        <rect key="frame" x="106" y="37" width="41.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxq-am-RQw">
+                        <rect key="frame" x="106" y="55" width="206" height="66"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pxq-am-RQw" firstAttribute="leading" secondItem="3dC-Q1-qIr" secondAttribute="trailing" constant="8" id="7v7-vp-QxT"/>
+                    <constraint firstItem="ryr-A6-eY0" firstAttribute="top" secondItem="T2r-xU-R6I" secondAttribute="bottom" id="8hy-8C-I89"/>
+                    <constraint firstItem="pxq-am-RQw" firstAttribute="bottom" secondItem="YTl-1W-gDM" secondAttribute="bottomMargin" id="Cq8-xt-F4K"/>
+                    <constraint firstItem="ryr-A6-eY0" firstAttribute="leading" secondItem="3dC-Q1-qIr" secondAttribute="trailing" constant="8" id="FWb-Q4-VXl"/>
+                    <constraint firstItem="pxq-am-RQw" firstAttribute="trailing" secondItem="YTl-1W-gDM" secondAttribute="trailingMargin" id="Nkf-82-1vK"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="3dC-Q1-qIr" secondAttribute="leading" id="WAs-BD-clY"/>
+                    <constraint firstItem="T2r-xU-R6I" firstAttribute="top" secondItem="3dC-Q1-qIr" secondAttribute="top" id="cDt-cf-riX"/>
+                    <constraint firstItem="T2r-xU-R6I" firstAttribute="leading" secondItem="3dC-Q1-qIr" secondAttribute="trailing" constant="8" id="hGv-Q3-yI2"/>
+                    <constraint firstItem="pxq-am-RQw" firstAttribute="top" secondItem="ryr-A6-eY0" secondAttribute="bottom" id="qHu-db-buH"/>
+                    <constraint firstItem="3dC-Q1-qIr" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="yK8-hT-FKv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="pxq-am-RQw" id="ffl-VK-UkB"/>
+                <outlet property="monkeyImage" destination="3dC-Q1-qIr" id="7zL-rY-R4s"/>
+                <outlet property="nameLabel" destination="T2r-xU-R6I" id="IjC-s7-Rn5"/>
+                <outlet property="originLabel" destination="ryr-A6-eY0" id="05q-d8-3f0"/>
+            </connections>
+            <point key="canvasLocation" x="53" y="11"/>
+        </tableViewCell>
+    </objects>
+</document>

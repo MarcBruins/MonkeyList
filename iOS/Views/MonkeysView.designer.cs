@@ -10,7 +10,7 @@ using System.CodeDom.Compiler;
 namespace MonkeyList.Core.iOS
 {
 	[Register ("MonkeyView")]
-	partial class MonkeyView
+	partial class MonkeysView
 	{
 		[Outlet]
 		UIKit.UITableView MonkeyTableView { get; set; }

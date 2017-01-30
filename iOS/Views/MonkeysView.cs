@@ -7,9 +7,9 @@ using UIKit;
 
 namespace MonkeyList.Core.iOS
 {
-    public partial class MonkeyView : MvxViewController<MonkeysViewModel>
+    public partial class MonkeysView : MvxViewController<MonkeysViewModel>
     {
-        public MonkeyView() : base("MonkeyView", null)
+        public MonkeysView() : base("MonkeyView", null)
         {
         }
 
@@ -18,22 +18,17 @@ namespace MonkeyList.Core.iOS
             base.ViewDidLoad();
 
             // Perform any additional setup after loading the view, typically from a nib.
+            NavigationItem.Title = "Monkeys";
 
-            var source = new MvxSimpleTableViewSource(MonkeyTableView, MonkeyCell.Key, MonkeyCell.Key);
+            var source = new MvxSimpleTableViewSource(MonkeyTableView, "MonkeyCell", MonkeyCell.Key);
             MonkeyTableView.RowHeight = 130;
 
-            var set = this.CreateBindingSet<MonkeyView, MonkeysViewModel>();
+            var set = this.CreateBindingSet<MonkeysView, MonkeysViewModel>();
             set.Bind(source).To(vm => vm.Monkeys);
             set.Apply();
 
             MonkeyTableView.Source = source;
             MonkeyTableView.ReloadData();
-        }
-
-        public override void DidReceiveMemoryWarning()
-        {
-            base.DidReceiveMemoryWarning();
-            // Release any cached data, images, etc that aren't in use.
         }
     }
 }

@@ -144,7 +144,7 @@
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
-    <InterfaceDefinition Include="Views\MonkeyView.xib" />
+    <InterfaceDefinition Include="Views\MonkeysView.xib" />
     <InterfaceDefinition Include="Views\CustomCells\MonkeyCell.xib" />
   </ItemGroup>
   <ItemGroup>
@@ -162,9 +162,9 @@
     <Compile Include="Setup.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="DebugTrace.cs" />
-    <Compile Include="Views\MonkeyView.cs" />
-    <Compile Include="Views\MonkeyView.designer.cs">
-      <DependentUpon>MonkeyView.cs</DependentUpon>
+    <Compile Include="Views\MonkeysView.cs" />
+    <Compile Include="Views\MonkeysView.designer.cs">
+      <DependentUpon>MonkeysView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\CustomCells\MonkeyCell.cs" />
     <Compile Include="Views\CustomCells\MonkeyCell.designer.cs">

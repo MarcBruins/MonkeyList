@@ -20,13 +20,13 @@ namespace MonkeyList.Core.iOS
         protected MonkeyCell(IntPtr handle) : base(handle)
         {
 
-            var _imageViewLoader = new MvxImageViewLoader(() => monkeyImage);
+            var imageViewLoader = new MvxImageViewLoader(() => monkeyImage);
 
             // Note: this .ctor should not contain any initialization logic.
             this.DelayBind(() =>
             {
                 var set = this.CreateBindingSet<MonkeyCell, Monkey>();
-                set.Bind(_imageViewLoader).To(m => m.Image);
+                set.Bind(imageViewLoader).To(m => m.Image);
                 set.Bind(nameLabel).To(m => m.Name);
                 set.Bind(originLabel).To(m => m.Location);
                 set.Bind(descriptionLabel).To(m => m.Details);

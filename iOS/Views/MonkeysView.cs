@@ -9,7 +9,7 @@ namespace MonkeyList.Core.iOS
 {
     public partial class MonkeysView : MvxViewController<MonkeysViewModel>
     {
-        public MonkeysView() : base("MonkeyView", null)
+        public MonkeysView() : base("MonkeysView", null)
         {
         }
 
